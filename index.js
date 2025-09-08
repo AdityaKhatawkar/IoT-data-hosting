@@ -36,9 +36,9 @@ const deviceSchema = new mongoose.Schema({
   humidity: Number,
   set_temperature: Number,
   set_humidity: Number,
-  heater_status: Number,
-  exhaust_status: Number,
-  aux_status: Number,
+  ac_fan_status: Number,       // New
+  dc_fan_status: Number,       // New
+  circular_fan_speed: Number,  // New
   operation_mode: String,
   timestamp: { type: Date, default: Date.now },
 });
